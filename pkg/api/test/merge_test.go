@@ -37,7 +37,12 @@ func TestMergeCreate(t *testing.T) {
 	// Merge inFiles by concatenation in the order specified and write the result to outFile.
 	// outFile will be overwritten.
 	if err := api.MergeCreateFile(inFiles, outFile, nil); err != nil {
-		t.Fatalf("%s: %v\n", msg, err)
+		switch e := err.(type) {
+		case *api.MergeError:
+			t.Fatalf("Merge file %d error %s: %v\n", e.SourceIndex, msg, err)
+		default:
+			t.Fatalf("%s: %v\n", msg, err)
+		}
 	}
 }
 

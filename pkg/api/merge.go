@@ -43,6 +43,22 @@ type ReadSeekerCloser interface {
 	io.Closer
 }
 
+type MergeError struct {
+	SourceIndex int
+	Err         error
+}
+
+func (e *MergeError) Error() string {
+	return e.Err.Error()
+}
+
+func newMergeError(sourceIndex int, err error) *MergeError {
+	return &MergeError{
+		SourceIndex: sourceIndex,
+		Err:         err,
+	}
+}
+
 // Merge merges a sequence of PDF streams and writes the result to w.
 func Merge(rsc []io.ReadSeeker, w io.Writer, conf *pdfcpu.Configuration) error {
 	if rsc == nil {
@@ -58,15 +74,15 @@ func Merge(rsc []io.ReadSeeker, w io.Writer, conf *pdfcpu.Configuration) error {
 
 	ctxDest, _, _, err := readAndValidate(rsc[0], conf, time.Now())
 	if err != nil {
-		return err
+		return newMergeError(0, err)
 	}
 
 	ctxDest.EnsureVersionForWriting()
 
 	// Repeatedly merge files into fileDest's xref table.
-	for _, f := range rsc[1:] {
+	for index, f := range rsc[1:] {
 		if err = appendTo(f, ctxDest); err != nil {
-			return err
+			return newMergeError(index, err)
 		}
 	}
 
