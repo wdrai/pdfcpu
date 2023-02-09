@@ -23,9 +23,9 @@ import (
 	"strconv"
 	"strings"
 
-	pdffont "github.com/pdfcpu/pdfcpu/pkg/font"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	pdffont "github.com/wdrai/pdfcpu/pkg/font"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu"
 )
 
 type PDF struct {

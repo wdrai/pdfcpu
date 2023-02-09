@@ -17,8 +17,8 @@ limitations under the License.
 package validate
 
 import (
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	pdf "github.com/wdrai/pdfcpu/pkg/pdfcpu"
 )
 
 func validateEntryV(xRefTable *pdf.XRefTable, d pdf.Dict, dictName string, required bool, sinceVersion pdf.Version, pBeadIndRef *pdf.IndirectRef, objNumber int) error {

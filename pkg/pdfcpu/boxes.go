@@ -21,8 +21,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/types"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/types"
 )
 
 // Box is a rectangular region in user space

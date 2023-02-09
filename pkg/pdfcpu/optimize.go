@@ -22,8 +22,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/log"
 )
 
 func optimizeContentStreamUsage(ctx *Context, sd *StreamDict, objNr int) (*IndirectRef, error) {

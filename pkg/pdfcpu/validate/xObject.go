@@ -17,9 +17,9 @@ limitations under the License.
 package validate
 
 import (
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/filter"
+	pdf "github.com/wdrai/pdfcpu/pkg/pdfcpu"
 )
 
 const (

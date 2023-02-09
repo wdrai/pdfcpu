@@ -21,7 +21,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
+	"github.com/wdrai/pdfcpu/pkg/log"
 )
 
 func csvSafeString(s string) string {

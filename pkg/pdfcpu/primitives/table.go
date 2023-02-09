@@ -21,8 +21,8 @@ import (
 	"math"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu"
 )
 
 type TableHeader struct {

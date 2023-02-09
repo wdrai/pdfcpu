@@ -27,8 +27,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/filter"
 )
 
 var inDir, outDir string

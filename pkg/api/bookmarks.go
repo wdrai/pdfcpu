@@ -21,8 +21,8 @@ import (
 	"os"
 	"time"
 
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	pdf "github.com/wdrai/pdfcpu/pkg/pdfcpu"
 )
 
 // AddBookmarks adds a single bookmark outline layer to the PDF context read from rs and writes the result to w.

@@ -26,8 +26,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/internal/corefont/metrics"
-	"github.com/pdfcpu/pdfcpu/pkg/types"
+	"github.com/wdrai/pdfcpu/internal/corefont/metrics"
+	"github.com/wdrai/pdfcpu/pkg/types"
 )
 
 // TTFLight represents a TrueType font w/o font file.

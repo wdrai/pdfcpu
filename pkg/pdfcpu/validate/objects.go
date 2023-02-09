@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/log"
+	pdf "github.com/wdrai/pdfcpu/pkg/pdfcpu"
 )
 
 const (

@@ -26,9 +26,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
-	"github.com/pdfcpu/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/filter"
+	"github.com/wdrai/pdfcpu/pkg/log"
 )
 
 // XRefTableEntry represents an entry in the PDF cross reference table.

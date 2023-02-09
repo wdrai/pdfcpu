@@ -23,8 +23,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/log"
 )
 
 // AnnotationFlags represents the PDF annotation flags.

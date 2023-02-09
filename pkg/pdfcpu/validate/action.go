@@ -19,8 +19,8 @@ package validate
 import (
 	"strings"
 
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	pdf "github.com/wdrai/pdfcpu/pkg/pdfcpu"
 )
 
 func validateGoToActionDict(xRefTable *pdf.XRefTable, d pdf.Dict, dictName string) error {

@@ -19,8 +19,8 @@ package pdfcpu
 import (
 	"fmt"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/log"
 )
 
 const (

@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"unicode/utf8"
 
-	"github.com/pdfcpu/pdfcpu/pkg/font"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/font"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu"
 )
 
 // FieldFlags represents the PDF form field flags.

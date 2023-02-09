@@ -29,8 +29,8 @@ import (
 	"time"
 	"unicode/utf16"
 
-	"github.com/pdfcpu/pdfcpu/pkg/font"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/font"
 )
 
 func flateEncodedStreamIndRef(xRefTable *XRefTable, data []byte) (*IndirectRef, error) {

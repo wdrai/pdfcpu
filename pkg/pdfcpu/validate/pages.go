@@ -17,9 +17,9 @@ limitations under the License.
 package validate
 
 import (
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/log"
+	pdf "github.com/wdrai/pdfcpu/pkg/pdfcpu"
 )
 
 func validateResourceDict(xRefTable *pdf.XRefTable, o pdf.Object) (hasResources bool, err error) {

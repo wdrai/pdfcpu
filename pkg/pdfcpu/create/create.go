@@ -20,9 +20,9 @@ import (
 	"encoding/json"
 	"io"
 
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/primitives"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/primitives"
 )
 
 func parseFromJSON(bb []byte, ctx *pdfcpu.Context) (*primitives.PDF, error) {

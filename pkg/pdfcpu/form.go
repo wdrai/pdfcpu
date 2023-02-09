@@ -19,8 +19,8 @@ package pdfcpu
 import (
 	"strings"
 
-	pdffont "github.com/pdfcpu/pdfcpu/pkg/font"
 	"github.com/pkg/errors"
+	pdffont "github.com/wdrai/pdfcpu/pkg/font"
 )
 
 func ParseHorAlignment(s string) (HAlignment, error) {

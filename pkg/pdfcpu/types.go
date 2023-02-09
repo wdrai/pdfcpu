@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/pdfcpu/pdfcpu/pkg/types"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/types"
 )
 
 // Supported line delimiters

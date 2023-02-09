@@ -25,9 +25,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/log"
+	pdf "github.com/wdrai/pdfcpu/pkg/pdfcpu"
 )
 
 // XRefTable validates a PDF cross reference table obeying the validation mode.
