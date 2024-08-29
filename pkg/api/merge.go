@@ -43,6 +43,22 @@ func appendTo(rs io.ReadSeeker, fName string, ctxDest *model.Context, dividerPag
 	return pdfcpu.MergeXRefTables(fName, ctxSource, ctxDest, false, dividerPage)
 }
 
+type MergeError struct {
+	SourceIndex int
+	Err         error
+}
+
+func (e *MergeError) Error() string {
+	return e.Err.Error()
+}
+
+func newMergeError(sourceIndex int, err error) *MergeError {
+	return &MergeError{
+		SourceIndex: sourceIndex,
+		Err:         err,
+	}
+}
+
 // MergeRaw merges a sequence of PDF streams and writes the result to w.
 func MergeRaw(rsc []io.ReadSeeker, w io.Writer, dividerPage bool, conf *model.Configuration) error {
 	if rsc == nil {
@@ -62,14 +78,14 @@ func MergeRaw(rsc []io.ReadSeeker, w io.Writer, dividerPage bool, conf *model.Co
 
 	ctxDest, err := ReadAndValidate(rsc[0], conf)
 	if err != nil {
-		return err
+		return newMergeError(0, err)
 	}
 
 	ctxDest.EnsureVersionForWriting()
 
 	for i, f := range rsc[1:] {
 		if err = appendTo(f, strconv.Itoa(i), ctxDest, dividerPage); err != nil {
-			return err
+			return newMergeError(i, err)
 		}
 	}
 
