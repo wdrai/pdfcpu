@@ -1,32 +1,38 @@
 {
 	"header": {
 		"source": "person.pdf",
-		"version": "pdfcpu v0.4.1 dev",
-		"creation": "2023-05-01 01:57:41 CEST",
-		"producer": "pdfcpu v0.4.1 dev"
+		"version": "pdfcpu v0.9.1 dev",
+		"creation": "2025-03-09 19:19:01 CET",
+		"producer": "pdfcpu v0.9.1 dev"
 	},
 	"forms": [
 		{
 			"textfield": [
 				{
-					"page": 1,
-					"id": "33",
+					"pages": [
+						1
+					],
+					"id": "36",
 					"name": "firstName",
 					"value": "",
 					"multiline": false,
 					"locked": false
 				},
 				{
-					"page": 1,
-					"id": "39",
+					"pages": [
+						1
+					],
+					"id": "31",
 					"name": "lastName",
 					"value": "",
 					"multiline": false,
 					"locked": false
 				},
 				{
-					"page": 1,
-					"id": "35",
+					"pages": [
+						1
+					],
+					"id": "37",
 					"name": "planet",
 					"default": "Earth",
 					"value": "Earth",
@@ -34,17 +40,21 @@
 					"locked": true
 				},
 				{
-					"page": 1,
-					"id": "34",
-					"name": "country",
+					"pages": [
+						1
+					],
+					"id": "33",
+					"name": "occup",
 					"value": "",
 					"multiline": false,
 					"locked": false
 				},
 				{
-					"page": 1,
-					"id": "36",
-					"name": "occup",
+					"pages": [
+						1
+					],
+					"id": "32",
+					"name": "country",
 					"value": "",
 					"multiline": false,
 					"locked": false
@@ -52,8 +62,10 @@
 			],
 			"datefield": [
 				{
-					"page": 1,
-					"id": "37",
+					"pages": [
+						1
+					],
+					"id": "38",
 					"name": "dob",
 					"format": "dd.mm.yyyy",
 					"value": "",
@@ -62,8 +74,10 @@
 			],
 			"checkbox": [
 				{
-					"page": 1,
-					"id": "31",
+					"pages": [
+						1
+					],
+					"id": "34",
 					"name": "dobVerified",
 					"default": false,
 					"value": false,
@@ -72,7 +86,9 @@
 			],
 			"radiobuttongroup": [
 				{
-					"page": 1,
+					"pages": [
+						1
+					],
 					"id": "19",
 					"name": "gender",
 					"options": [
@@ -86,8 +102,28 @@
 			],
 			"combobox": [
 				{
-					"page": 1,
-					"id": "32",
+					"pages": [
+						1
+					],
+					"id": "39",
+					"name": "status",
+					"editable": false,
+					"options": [
+						"alive",
+						"deceased",
+						"imprisoned",
+						"killed",
+						"unknown"
+					],
+					"default": "unknown",
+					"value": "unknown",
+					"locked": false
+				},
+				{
+					"pages": [
+						1
+					],
+					"id": "35",
 					"name": "license",
 					"editable": false,
 					"options": [
@@ -107,22 +143,6 @@
 						"unknown"
 					],
 					"value": "",
-					"locked": false
-				},
-				{
-					"page": 1,
-					"id": "38",
-					"name": "status",
-					"editable": false,
-					"options": [
-						"alive",
-						"deceased",
-						"imprisoned",
-						"killed",
-						"unknown"
-					],
-					"default": "unknown",
-					"value": "unknown",
 					"locked": false
 				}
 			]

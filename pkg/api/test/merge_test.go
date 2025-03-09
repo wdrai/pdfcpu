@@ -23,7 +23,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/pdfcpu/pdfcpu/pkg/api"
+	"github.com/wdrai/pdfcpu/pkg/api"
 )
 
 func TestMergeCreateNew(t *testing.T) {
@@ -40,7 +40,12 @@ func TestMergeCreateNew(t *testing.T) {
 
 	outFile := filepath.Join(outDir, "out.pdf")
 	if err := api.MergeCreateFile(inFiles, outFile, false, nil); err != nil {
-		t.Fatalf("%s: %v\n", msg, err)
+		switch e := err.(type) {
+		case *api.MergeError:
+			t.Fatalf("Merge file %d error %s: %v\n", e.SourceIndex, msg, err)
+		default:
+			t.Fatalf("%s: %v\n", msg, err)
+		}
 	}
 
 	if err := api.ValidateFile(outFile, conf); err != nil {

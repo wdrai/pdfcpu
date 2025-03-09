@@ -24,11 +24,11 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/log"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/model"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/types"
 )
 
 func prepareForCut(rs io.ReadSeeker, selectedPages []string, conf *model.Configuration) (*model.Context, types.IntSet, error) {

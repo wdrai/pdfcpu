@@ -28,8 +28,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/pdfcpu/pdfcpu/internal/corefont/metrics"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
+	"github.com/wdrai/pdfcpu/internal/corefont/metrics"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/types"
 
 	"github.com/pkg/errors"
 )

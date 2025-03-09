@@ -21,9 +21,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/pdfcpu/pdfcpu/pkg/api"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/form"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
+	"github.com/wdrai/pdfcpu/pkg/api"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/form"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/model"
 )
 
 /**************************************************************

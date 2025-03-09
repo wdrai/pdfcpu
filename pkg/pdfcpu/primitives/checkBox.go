@@ -20,11 +20,11 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/color"
-	pdffont "github.com/pdfcpu/pdfcpu/pkg/pdfcpu/font"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/color"
+	pdffont "github.com/wdrai/pdfcpu/pkg/pdfcpu/font"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/model"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/types"
 )
 
 // CheckBox represents a form checkbox including a positioned label.

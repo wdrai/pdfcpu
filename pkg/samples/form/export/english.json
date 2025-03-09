@@ -1,16 +1,29 @@
 {
 	"header": {
 		"source": "english.pdf",
-		"version": "pdfcpu v0.4.0 dev",
-		"creation": "2023-03-16 23:35:35 CET",
-		"producer": "pdfcpu v0.4.0 dev"
+		"version": "pdfcpu v0.9.1 dev",
+		"creation": "2025-03-09 19:19:01 CET",
+		"producer": "pdfcpu v0.9.1 dev"
 	},
 	"forms": [
 		{
 			"textfield": [
 				{
-					"page": 1,
-					"id": "37",
+					"pages": [
+						1
+					],
+					"id": "35",
+					"name": "firstName1",
+					"default": "Joe",
+					"value": "Jackie",
+					"multiline": false,
+					"locked": false
+				},
+				{
+					"pages": [
+						1
+					],
+					"id": "36",
 					"name": "lastName1",
 					"default": "Doeby",
 					"value": "Doe",
@@ -18,27 +31,22 @@
 					"locked": false
 				},
 				{
-					"page": 1,
-					"id": "32",
+					"pages": [
+						1
+					],
+					"id": "30",
 					"name": "note1",
 					"value": "This is a sample text.\nThis is the next line.",
 					"multiline": true,
-					"locked": false
-				},
-				{
-					"page": 1,
-					"id": "31",
-					"name": "firstName1",
-					"default": "Joe",
-					"value": "Jackie",
-					"multiline": false,
 					"locked": false
 				}
 			],
 			"datefield": [
 				{
-					"page": 1,
-					"id": "38",
+					"pages": [
+						1
+					],
+					"id": "31",
 					"name": "dob1",
 					"format": "dd.mm.yyyy",
 					"default": "01.01.2000",
@@ -48,41 +56,51 @@
 			],
 			"checkbox": [
 				{
-					"page": 1,
-					"id": "39",
+					"pages": [
+						1
+					],
+					"id": "32",
 					"name": "cb12",
 					"default": false,
 					"value": false,
 					"locked": false
 				},
 				{
-					"page": 1,
-					"id": "34",
-					"name": "cb14",
-					"default": false,
-					"value": false,
-					"locked": false
-				},
-				{
-					"page": 1,
+					"pages": [
+						1
+					],
 					"id": "33",
-					"name": "cb11",
-					"default": false,
-					"value": true,
-					"locked": false
-				},
-				{
-					"page": 1,
-					"id": "40",
 					"name": "cb13",
 					"default": false,
 					"value": false,
 					"locked": false
 				},
 				{
-					"page": 1,
-					"id": "35",
+					"pages": [
+						1
+					],
+					"id": "38",
 					"name": "cb15",
+					"default": false,
+					"value": false,
+					"locked": false
+				},
+				{
+					"pages": [
+						1
+					],
+					"id": "37",
+					"name": "cb11",
+					"default": false,
+					"value": true,
+					"locked": false
+				},
+				{
+					"pages": [
+						1
+					],
+					"id": "34",
+					"name": "cb14",
 					"default": false,
 					"value": false,
 					"locked": false
@@ -90,7 +108,9 @@
 			],
 			"radiobuttongroup": [
 				{
-					"page": 1,
+					"pages": [
+						1
+					],
 					"id": "17",
 					"name": "gender1",
 					"options": [
@@ -105,8 +125,10 @@
 			],
 			"combobox": [
 				{
-					"page": 1,
-					"id": "30",
+					"pages": [
+						1
+					],
+					"id": "39",
 					"name": "city12",
 					"editable": false,
 					"options": [
@@ -121,8 +143,10 @@
 			],
 			"listbox": [
 				{
-					"page": 1,
-					"id": "36",
+					"pages": [
+						1
+					],
+					"id": "40",
 					"name": "city11",
 					"multi": true,
 					"options": [

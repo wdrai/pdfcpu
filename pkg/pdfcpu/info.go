@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/draw"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
+	"github.com/wdrai/pdfcpu/pkg/log"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/draw"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/model"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/types"
 )
 
 func extractAuthor(ctx *model.Context, obj types.Object) (err error) {

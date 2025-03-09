@@ -21,12 +21,12 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/pdfcpu/pdfcpu/pkg/font"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/color"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/format"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/font"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/color"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/format"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/model"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/types"
 )
 
 // Note: Mac Preview does not support validating date fields.

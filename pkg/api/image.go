@@ -23,9 +23,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/model"
 )
 
 // Images returns all embedded images of rs.

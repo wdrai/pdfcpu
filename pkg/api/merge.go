@@ -22,10 +22,10 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
 	"github.com/pkg/errors"
+	"github.com/wdrai/pdfcpu/pkg/log"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu"
+	"github.com/wdrai/pdfcpu/pkg/pdfcpu/model"
 )
 
 // appendTo appends rs to ctxDest's page tree.
@@ -62,14 +62,14 @@ func MergeRaw(rsc []io.ReadSeeker, w io.Writer, dividerPage bool, conf *model.Co
 
 	ctxDest, err := ReadAndValidate(rsc[0], conf)
 	if err != nil {
-		return err
+		return newMergeError(0, err)
 	}
 
 	ctxDest.EnsureVersionForWriting()
 
 	for i, f := range rsc[1:] {
 		if err = appendTo(f, strconv.Itoa(i), ctxDest, dividerPage); err != nil {
-			return err
+			return newMergeError(i, err)
 		}
 	}
 
@@ -97,6 +97,22 @@ func prepDestContext(destFile string, rs io.ReadSeeker, conf *model.Configuratio
 	}
 
 	return ctxDest, nil
+}
+
+type MergeError struct {
+	SourceIndex int
+	Err         error
+}
+
+func (e *MergeError) Error() string {
+	return e.Err.Error()
+}
+
+func newMergeError(sourceIndex int, err error) *MergeError {
+	return &MergeError{
+		SourceIndex: sourceIndex,
+		Err:         err,
+	}
 }
 
 // Merge concatenates inFiles.

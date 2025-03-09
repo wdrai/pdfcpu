@@ -1,4 +1,4 @@
-module github.com/pdfcpu/pdfcpu
+module github.com/wdrai/pdfcpu
 
 go 1.22
 
@@ -12,4 +12,6 @@ require (
 	gopkg.in/yaml.v2 v2.4.0
 )
 
-require github.com/rivo/uniseg v0.4.7 // indirect
+require (
+	github.com/rivo/uniseg v0.4.7 // indirect
+)
